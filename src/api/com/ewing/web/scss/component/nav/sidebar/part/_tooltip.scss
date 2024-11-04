@@ -1,0 +1,25 @@
+a {
+    &[data-component='sidebar-button'] {
+        div {
+            &[data-component='sidebar-tooltip'] {
+                @apply absolute inset-y-0 left-12 hidden items-center transition-all;
+
+                [data-tooltip] {
+                    @apply relative whitespace-nowrap rounded-md bg-white px-4 py-2 font-semibold text-sm text-gray-900 capitalize drop-shadow-lg;
+
+                    [data-tip] {
+                        @apply absolute inset-0 -left-1 flex items-center;
+
+                        [data-arrow] {
+                            @apply h-2 w-2 rotate-45 bg-white;
+                        }
+                    }
+                }
+
+                span {
+                    @apply pl-1 text-gray-400 uppercase
+                }
+            }
+        }
+    }
+}

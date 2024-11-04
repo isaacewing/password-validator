@@ -1,0 +1,20 @@
+a {
+    &[data-component='sidebar-button'] {
+        @apply p-1 relative text-gray-700 rounded bg-none ring-0 hover:bg-white hover:ring hover:text-gray-400 transition-all;
+
+        &[data-active='true'] {
+            @apply bg-gray-200 shadow-inner;
+
+            &:not([data-disabled='true']) {
+                @apply hover:ring-0 hover:text-gray-700;
+            }
+        }
+
+        &[data-disabled='true'] {
+            @apply text-gray-400 shadow-none hover:bg-inherit hover:ring-0 hover:cursor-auto;
+        }
+
+        svg {
+        }
+    }
+}

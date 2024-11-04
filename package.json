@@ -1,0 +1,48 @@
+{
+    "name"           : "password-validator",
+    "private"        : true,
+    "version"        : "2024.11.4",
+    "type"           : "module",
+    "scripts"        : {
+        "start"  : "vite",
+        "build"  : "tsc -b && vite build",
+        "lint"   : "eslint .",
+        "preview": "vite preview"
+    },
+    "dependencies"   : {
+        "react"     : "^18.x",
+        "react-aria": "^03.x",
+        "react-dom" : "^18.x"
+    },
+    "devDependencies": {
+        "@eslint/js"                 : "^09.x",
+        "@headlessui/react"          : "^02.x",
+        "@heroicons/react"           : "^02.x",
+        "@tailwindcss/forms"         : "^00.x",
+        "@types/colors"              : "^01.x",
+        "@types/object-hash"         : "^03.x",
+        "@types/randomstring"        : "^01.x",
+        "@types/react"               : "^18.x",
+        "@types/react-dom"           : "^18.x",
+        "@vitejs/plugin-react"       : "^04.x",
+        "autoprefixer"               : "^10.x",
+        "colors"                     : "^01.x",
+        "eslint"                     : "^09.x",
+        "eslint-plugin-react-hooks"  : "rc",
+        "eslint-plugin-react-refresh": "^00.x",
+        "globals"                    : "^15.x",
+        "object-hash"                : "^03.x",
+        "postcss"                    : "^08.x",
+        "prettier"                   : "^03.x",
+        "random-int"                 : "^03.x",
+        "randomstring"               : "^01.x",
+        "sass-embedded"              : "^01.x",
+        "ts-md5"                     : "^01.x",
+        "tailwindcss"                : "^03.x",
+        "typescript"                 : "^05.x",
+        "typescript-eslint"          : "^08.x",
+        "use-local-storage-state"    : "^19.x",
+        "use-session-storage-state"  : "^19.x",
+        "vite"                       : "^05.x"
+    }
+}

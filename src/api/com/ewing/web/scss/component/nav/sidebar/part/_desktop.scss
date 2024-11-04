@@ -1,0 +1,21 @@
+nav {
+    &[data-sidebar='desktop'] {
+        @apply flex-1 invisible hidden lg:max-6xl:flex lg:max-6xl:visible transition-all;
+
+        aside {
+            &[data-desktop] {
+                @apply flex flex-col text-gray-900 text-center items-center bg-white border border-gray-200 shadow-md rounded-lg bg-white/50 backdrop-blur-lg dark:border-slate-600/60 dark:bg-slate-800/50;
+
+                nav {
+                    &[desktop-menu='top'] {
+                        @apply flex flex-1 flex-col items-center gap-y-4 pt-4 px-4;
+                    }
+
+                    &[desktop-menu='bottom'] {
+                        @apply flex flex-initial flex-col items-center gap-y-4 pb-4 px-4;
+                    }
+                }
+            }
+        }
+    }
+}

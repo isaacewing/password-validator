@@ -1,0 +1,5 @@
+@forward 'header';
+@forward 'sidebar';
+
+@use 'header';
+@use 'sidebar';

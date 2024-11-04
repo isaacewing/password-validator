@@ -1,0 +1,5 @@
+aside {
+    &[data-component='sidebar'] {
+        @apply z-10;
+    }
+}

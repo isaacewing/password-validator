@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+a[data-component=sidebar-button] {
+  @apply relative text-gray-700 rounded p-1 bg-none ring-0 hover:bg-white hover:ring hover:text-gray-400 transition-all;
+}
+a[data-component=sidebar-button][data-active=true] {
+  @apply bg-gray-200 shadow-inner;
+}
+a[data-component=sidebar-button][data-active=true]:not([data-disabled=true]) {
+  @apply hover:ring-0 hover:text-gray-700;
+}
+a[data-component=sidebar-button][data-disabled=true] {
+  @apply text-gray-400 shadow-none hover:bg-inherit hover:ring-0 hover:cursor-auto;
+}
+a[data-component=sidebar-button] div[data-component=sidebar-tooltip] {
+  @apply absolute inset-y-0 left-12 hidden items-center transition-all;
+}
+a[data-component=sidebar-button] div[data-component=sidebar-tooltip] [data-tooltip] {
+  @apply relative whitespace-nowrap rounded-md bg-white px-4 py-2 font-semibold text-sm text-gray-900 capitalize drop-shadow-lg;
+}
+a[data-component=sidebar-button] div[data-component=sidebar-tooltip] [data-tooltip] [data-tip] {
+  @apply absolute inset-0 -left-1 flex items-center;
+}
+a[data-component=sidebar-button] div[data-component=sidebar-tooltip] [data-tooltip] [data-tip] [data-arrow] {
+  @apply h-2 w-2 rotate-45 bg-white;
+}
+a[data-component=sidebar-button] div[data-component=sidebar-tooltip] span {
+  @apply pl-1 text-gray-400 uppercase;
+}
+
+/*# sourceMappingURL=scss.css.map */

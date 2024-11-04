@@ -1,0 +1,9 @@
+header {
+    &[data-component='header'] {
+        //@apply max-w-full w-full mx-0 p-4 border border-gray-300 shadow rounded-md;
+
+        .tooltip:hover .tooltip-item {
+            visibility: visible;
+        }
+    }
+}
